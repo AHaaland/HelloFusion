@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Test App For SUNY New Paltz Benjamin Center</string>
+    <string name="id">ID</string>
+    <string name="longitude">Longitude</string>
+    <string name="latitiude">Latitude</string>
+    <string name="type">Type</string>
+    <string name="insert">Insert</string>
+    <string name="action_settings">Settings</string>
+</resources>
