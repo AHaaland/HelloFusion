@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static FileDataStoreFactory dataStoreFactory;
 
-    private static final String SERVICE_ACCOUNT_EMAIL = "personal-fusion-table@appspot.gserviceaccount.com";
+    private static final String SERVICE_ACCOUNT_EMAIL = "drhaaland@gmail.com";
     private String setFusion()
     {
         String f="112";
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
             GoogleCredential credential = new GoogleCredential.Builder().setTransport(HTTP_TRANSPORT)
                     .setJsonFactory(JSON_FACTORY)
                     .setServiceAccountId(SERVICE_ACCOUNT_EMAIL)
-                    .setServiceAccountPrivateKeyId("1ZUuTLagJJctcsD_eFgAnkZOPIjA5su1enshkxxNE")
+                    .setServiceAccountPrivateKeyId("330010208408-ub5sja5pkjids7mj30oj34lhj9dgn0dc.apps.googleusercontent.com")
                     .build();
             fusiontables = new Fusiontables.Builder(HTTP_TRANSPORT,JSON_FACTORY,credential).setApplicationName("Fusiontable Database").build();
             Sql sql = fusiontables.query().sql("SELECT Location FROM 1ZUuTLagJJctcsD_eFgAnkZOPIjA5su1enshkxxNE WHERE number=12");
@@ -120,5 +120,8 @@ public class MainActivity extends AppCompatActivity {
                 toast.makeText(MainActivity.this, name.getText(), toast.LENGTH_SHORT).show();
             }
         });
+
+
+        //ClientID 330010208408-ub5sja5pkjids7mj30oj34lhj9dgn0dc.apps.googleusercontent.com
     }
 }
